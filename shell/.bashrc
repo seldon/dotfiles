@@ -97,3 +97,12 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+##################################
+# Custom function definitions    #
+##################################
+
+# load every code snippet within `.bash.d'
+for snippet in ~/.bash.d/*.sh; do
+    source $snippet
+done
