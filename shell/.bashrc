@@ -106,3 +106,5 @@ fi
 for snippet in ~/.bash.d/*.sh; do
     source $snippet
 done
+
+export EDITOR='/usr/bin/emacsclient'
